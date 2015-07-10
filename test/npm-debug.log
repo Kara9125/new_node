@@ -1,0 +1,1206 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'node',
+1 verbose cli   '/usr/local/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   'mocha',
+1 verbose cli   'chai',
+1 verbose cli   'request',
+1 verbose cli   '--save' ]
+2 info using npm@2.11.2
+3 info using node@v0.12.5
+4 verbose node symlink /usr/local/bin/node
+5 verbose install initial load of /Users/Anjelica/dev/new_node/package.json
+6 warn package.json newnode@1.0.0 No repository field.
+7 warn package.json newnode@1.0.0 No README data
+8 verbose installManyTop reading scoped package data from /Users/Anjelica/dev/new_node/node_modules/body-parser/package.json
+9 verbose installManyTop reading scoped package data from /Users/Anjelica/dev/new_node/node_modules/chai/package.json
+10 verbose installManyTop reading scoped package data from /Users/Anjelica/dev/new_node/node_modules/express/package.json
+11 verbose installManyTop reading scoped package data from /Users/Anjelica/dev/new_node/node_modules/mocha/package.json
+12 verbose installManyTop reading scoped package data from /Users/Anjelica/dev/new_node/node_modules/request/package.json
+13 verbose readDependencies loading dependencies from /Users/Anjelica/dev/new_node/package.json
+14 verbose install mocha is installed as 2.2.5
+15 silly cache add args [ 'mocha@^2.2.5', null ]
+16 verbose cache add spec mocha@^2.2.5
+17 verbose install chai is installed as 3.0.0
+18 silly cache add args [ 'chai@^3.0.0', null ]
+19 verbose cache add spec chai@^3.0.0
+20 verbose install request is installed as 2.58.0
+21 silly cache add args [ 'request@^2.58.0', null ]
+22 verbose cache add spec request@^2.58.0
+23 silly cache add parsed spec { raw: 'mocha@^2.2.5',
+23 silly cache add   scope: null,
+23 silly cache add   name: 'mocha',
+23 silly cache add   rawSpec: '^2.2.5',
+23 silly cache add   spec: '>=2.2.5 <3.0.0',
+23 silly cache add   type: 'range' }
+24 silly addNamed mocha@>=2.2.5 <3.0.0
+25 verbose addNamed ">=2.2.5 <3.0.0" is a valid semver range for mocha
+26 silly addNameRange { name: 'mocha', range: '>=2.2.5 <3.0.0', hasData: false }
+27 silly mapToRegistry name mocha
+28 silly mapToRegistry using default registry
+29 silly mapToRegistry registry https://registry.npmjs.org/
+30 silly mapToRegistry uri https://registry.npmjs.org/mocha
+31 verbose addNameRange registry:https://registry.npmjs.org/mocha not in flight; fetching
+32 silly cache add parsed spec { raw: 'chai@^3.0.0',
+32 silly cache add   scope: null,
+32 silly cache add   name: 'chai',
+32 silly cache add   rawSpec: '^3.0.0',
+32 silly cache add   spec: '>=3.0.0 <4.0.0',
+32 silly cache add   type: 'range' }
+33 silly addNamed chai@>=3.0.0 <4.0.0
+34 verbose addNamed ">=3.0.0 <4.0.0" is a valid semver range for chai
+35 silly addNameRange { name: 'chai', range: '>=3.0.0 <4.0.0', hasData: false }
+36 silly mapToRegistry name chai
+37 silly mapToRegistry using default registry
+38 silly mapToRegistry registry https://registry.npmjs.org/
+39 silly mapToRegistry uri https://registry.npmjs.org/chai
+40 verbose addNameRange registry:https://registry.npmjs.org/chai not in flight; fetching
+41 silly cache add parsed spec { raw: 'request@^2.58.0',
+41 silly cache add   scope: null,
+41 silly cache add   name: 'request',
+41 silly cache add   rawSpec: '^2.58.0',
+41 silly cache add   spec: '>=2.58.0 <3.0.0',
+41 silly cache add   type: 'range' }
+42 silly addNamed request@>=2.58.0 <3.0.0
+43 verbose addNamed ">=2.58.0 <3.0.0" is a valid semver range for request
+44 silly addNameRange { name: 'request', range: '>=2.58.0 <3.0.0', hasData: false }
+45 silly mapToRegistry name request
+46 silly mapToRegistry using default registry
+47 silly mapToRegistry registry https://registry.npmjs.org/
+48 silly mapToRegistry uri https://registry.npmjs.org/request
+49 verbose addNameRange registry:https://registry.npmjs.org/request not in flight; fetching
+50 verbose request uri https://registry.npmjs.org/mocha
+51 verbose request no auth needed
+52 info attempt registry request try #1 at 17:43:29
+53 verbose request id 7bad07d3ebbe37fb
+54 verbose etag "EBKSGP5O11YV0WGXHMCY0VC37"
+55 http request GET https://registry.npmjs.org/mocha
+56 verbose request uri https://registry.npmjs.org/chai
+57 verbose request no auth needed
+58 info attempt registry request try #1 at 17:43:29
+59 verbose etag "2QMOWG9DDE72BP8QG68SAJ40I"
+60 http request GET https://registry.npmjs.org/chai
+61 verbose request uri https://registry.npmjs.org/request
+62 verbose request no auth needed
+63 info attempt registry request try #1 at 17:43:29
+64 verbose etag "4LZDAEGIAPK4TK0K6HSLSV59V"
+65 http request GET https://registry.npmjs.org/request
+66 http 304 https://registry.npmjs.org/request
+67 silly get cb [ 304,
+67 silly get   { date: 'Fri, 10 Jul 2015 00:43:29 GMT',
+67 silly get     via: '1.1 varnish',
+67 silly get     'cache-control': 'max-age=60',
+67 silly get     etag: '"4LZDAEGIAPK4TK0K6HSLSV59V"',
+67 silly get     age: '41',
+67 silly get     connection: 'keep-alive',
+67 silly get     'x-served-by': 'cache-sjc3128-SJC',
+67 silly get     'x-cache': 'HIT',
+67 silly get     'x-cache-hits': '3',
+67 silly get     'x-timer': 'S1436489009.325013,VS0,VE0',
+67 silly get     vary: 'Accept' } ]
+68 verbose etag https://registry.npmjs.org/request from cache
+69 verbose get saving request to /Users/Anjelica/.npm/registry.npmjs.org/request/.cache.json
+70 http 304 https://registry.npmjs.org/chai
+71 silly get cb [ 304,
+71 silly get   { date: 'Fri, 10 Jul 2015 00:43:29 GMT',
+71 silly get     via: '1.1 varnish',
+71 silly get     'cache-control': 'max-age=60',
+71 silly get     etag: '"2QMOWG9DDE72BP8QG68SAJ40I"',
+71 silly get     age: '27',
+71 silly get     connection: 'keep-alive',
+71 silly get     'x-served-by': 'cache-sjc3132-SJC',
+71 silly get     'x-cache': 'HIT',
+71 silly get     'x-cache-hits': '2',
+71 silly get     'x-timer': 'S1436489009.324969,VS0,VE0',
+71 silly get     vary: 'Accept' } ]
+72 verbose etag https://registry.npmjs.org/chai from cache
+73 verbose get saving chai to /Users/Anjelica/.npm/registry.npmjs.org/chai/.cache.json
+74 http 304 https://registry.npmjs.org/mocha
+75 silly get cb [ 304,
+75 silly get   { date: 'Fri, 10 Jul 2015 00:43:29 GMT',
+75 silly get     via: '1.1 varnish',
+75 silly get     'cache-control': 'max-age=60',
+75 silly get     etag: '"EBKSGP5O11YV0WGXHMCY0VC37"',
+75 silly get     age: '7',
+75 silly get     connection: 'keep-alive',
+75 silly get     'x-served-by': 'cache-sjc3125-SJC',
+75 silly get     'x-cache': 'HIT',
+75 silly get     'x-cache-hits': '1',
+75 silly get     'x-timer': 'S1436489009.324796,VS0,VE0',
+75 silly get     vary: 'Accept' } ]
+76 verbose etag https://registry.npmjs.org/mocha from cache
+77 verbose get saving mocha to /Users/Anjelica/.npm/registry.npmjs.org/mocha/.cache.json
+78 silly addNameRange number 2 { name: 'chai', range: '>=3.0.0 <4.0.0', hasData: true }
+79 silly addNameRange versions [ 'chai',
+79 silly addNameRange   [ '0.0.1',
+79 silly addNameRange     '0.0.2',
+79 silly addNameRange     '0.1.0',
+79 silly addNameRange     '0.1.1',
+79 silly addNameRange     '0.1.2',
+79 silly addNameRange     '0.1.3',
+79 silly addNameRange     '0.1.4',
+79 silly addNameRange     '0.1.5',
+79 silly addNameRange     '0.1.6',
+79 silly addNameRange     '0.1.7',
+79 silly addNameRange     '0.2.0',
+79 silly addNameRange     '0.2.1',
+79 silly addNameRange     '0.2.2',
+79 silly addNameRange     '0.2.3',
+79 silly addNameRange     '0.2.4',
+79 silly addNameRange     '0.3.0',
+79 silly addNameRange     '0.3.1',
+79 silly addNameRange     '0.3.2',
+79 silly addNameRange     '0.3.3',
+79 silly addNameRange     '0.3.4',
+79 silly addNameRange     '0.4.0',
+79 silly addNameRange     '0.4.1',
+79 silly addNameRange     '0.4.2',
+79 silly addNameRange     '0.5.0',
+79 silly addNameRange     '0.5.1',
+79 silly addNameRange     '0.5.2',
+79 silly addNameRange     '0.5.3',
+79 silly addNameRange     '1.0.0',
+79 silly addNameRange     '1.0.1',
+79 silly addNameRange     '1.0.2',
+79 silly addNameRange     '1.0.3',
+79 silly addNameRange     '1.0.4',
+79 silly addNameRange     '1.1.0',
+79 silly addNameRange     '1.1.1',
+79 silly addNameRange     '1.2.0',
+79 silly addNameRange     '1.3.0',
+79 silly addNameRange     '1.4.0',
+79 silly addNameRange     '1.4.1',
+79 silly addNameRange     '1.4.2',
+79 silly addNameRange     '1.5.0',
+79 silly addNameRange     '1.6.0',
+79 silly addNameRange     '1.6.1',
+79 silly addNameRange     '1.7.0',
+79 silly addNameRange     '1.7.1',
+79 silly addNameRange     '1.7.2',
+79 silly addNameRange     '1.8.0',
+79 silly addNameRange     '1.8.1',
+79 silly addNameRange     '1.9.0',
+79 silly addNameRange     '1.9.1',
+79 silly addNameRange     '1.9.2',
+79 silly addNameRange     '1.10.0',
+79 silly addNameRange     '2.0.0',
+79 silly addNameRange     '2.1.0',
+79 silly addNameRange     '2.1.1',
+79 silly addNameRange     '2.1.2',
+79 silly addNameRange     '2.2.0',
+79 silly addNameRange     '2.3.0',
+79 silly addNameRange     '3.0.0' ] ]
+80 silly addNamed chai@3.0.0
+81 verbose addNamed "3.0.0" is a plain semver version for chai
+82 silly addNameRange number 2 { name: 'mocha', range: '>=2.2.5 <3.0.0', hasData: true }
+83 silly addNameRange versions [ 'mocha',
+83 silly addNameRange   [ '0.0.1-alpha1',
+83 silly addNameRange     '0.0.1-alpha2',
+83 silly addNameRange     '0.0.1-alpha3',
+83 silly addNameRange     '0.0.1-alpha4',
+83 silly addNameRange     '0.0.1-alpha5',
+83 silly addNameRange     '0.0.1-alpha6',
+83 silly addNameRange     '0.0.1',
+83 silly addNameRange     '0.0.2',
+83 silly addNameRange     '0.0.3',
+83 silly addNameRange     '0.0.4',
+83 silly addNameRange     '0.0.5',
+83 silly addNameRange     '0.0.6',
+83 silly addNameRange     '0.0.7',
+83 silly addNameRange     '0.0.8',
+83 silly addNameRange     '0.1.0',
+83 silly addNameRange     '0.2.0',
+83 silly addNameRange     '0.3.0',
+83 silly addNameRange     '0.3.1',
+83 silly addNameRange     '0.3.2',
+83 silly addNameRange     '0.3.3',
+83 silly addNameRange     '0.3.4',
+83 silly addNameRange     '0.3.6',
+83 silly addNameRange     '0.4.0',
+83 silly addNameRange     '0.5.0',
+83 silly addNameRange     '0.6.0',
+83 silly addNameRange     '0.7.0',
+83 silly addNameRange     '0.7.1',
+83 silly addNameRange     '0.8.0',
+83 silly addNameRange     '0.8.1',
+83 silly addNameRange     '0.9.0',
+83 silly addNameRange     '0.10.0',
+83 silly addNameRange     '0.10.1',
+83 silly addNameRange     '0.10.2',
+83 silly addNameRange     '0.11.0',
+83 silly addNameRange     '0.12.0',
+83 silly addNameRange     '0.12.1',
+83 silly addNameRange     '0.13.0',
+83 silly addNameRange     '0.14.0',
+83 silly addNameRange     '0.14.1',
+83 silly addNameRange     '1.0.0',
+83 silly addNameRange     '1.0.1',
+83 silly addNameRange     '1.0.2',
+83 silly addNameRange     '1.0.3',
+83 silly addNameRange     '1.1.0',
+83 silly addNameRange     '1.2.0',
+83 silly addNameRange     '1.2.1',
+83 silly addNameRange     '1.2.2',
+83 silly addNameRange     '1.3.0',
+83 silly addNameRange     '1.3.1',
+83 silly addNameRange     '1.3.2',
+83 silly addNameRange     '1.4.0',
+83 silly addNameRange     '1.4.1',
+83 silly addNameRange     '1.4.2',
+83 silly addNameRange     '1.4.3',
+83 silly addNameRange     '1.5.0',
+83 silly addNameRange     '1.6.0',
+83 silly addNameRange     '1.7.0',
+83 silly addNameRange     '1.7.1',
+83 silly addNameRange     '1.7.2',
+83 silly addNameRange     '1.7.3',
+83 silly addNameRange     '1.7.4',
+83 silly addNameRange     '1.8.0',
+83 silly addNameRange     '1.8.1',
+83 silly addNameRange     '1.8.2',
+83 silly addNameRange     '1.9.0',
+83 silly addNameRange     '1.10.0',
+83 silly addNameRange     '1.11.0',
+83 silly addNameRange     '1.12.0',
+83 silly addNameRange     '1.12.1',
+83 silly addNameRange     '1.13.0',
+83 silly addNameRange     '1.14.0',
+83 silly addNameRange     '1.15.0',
+83 silly addNameRange     '1.15.1',
+83 silly addNameRange     '1.16.0',
+83 silly addNameRange     '1.16.1',
+83 silly addNameRange     '1.16.2',
+83 silly addNameRange     '1.17.0',
+83 silly addNameRange     '1.17.1',
+83 silly addNameRange     '1.18.0',
+83 silly addNameRange     '1.18.1',
+83 silly addNameRange     '1.18.2',
+83 silly addNameRange     '1.19.0',
+83 silly addNameRange     '1.20.0',
+83 silly addNameRange     '1.20.1',
+83 silly addNameRange     '1.21.0',
+83 silly addNameRange     '1.21.1',
+83 silly addNameRange     '1.21.2',
+83 silly addNameRange     '1.21.3',
+83 silly addNameRange     '1.21.4',
+83 silly addNameRange     '1.21.5',
+83 silly addNameRange     '2.0.0',
+83 silly addNameRange     '2.0.1',
+83 silly addNameRange     '2.1.0',
+83 silly addNameRange     '2.2.0',
+83 silly addNameRange     '2.2.1',
+83 silly addNameRange     '2.2.3',
+83 silly addNameRange     '2.2.4',
+83 silly addNameRange     '2.2.5' ] ]
+84 silly addNamed mocha@2.2.5
+85 verbose addNamed "2.2.5" is a plain semver version for mocha
+86 silly addNameRange number 2 { name: 'request', range: '>=2.58.0 <3.0.0', hasData: true }
+87 silly addNameRange versions [ 'request',
+87 silly addNameRange   [ '0.10.0',
+87 silly addNameRange     '0.8.3',
+87 silly addNameRange     '0.9.0',
+87 silly addNameRange     '0.9.1',
+87 silly addNameRange     '0.9.5',
+87 silly addNameRange     '1.0.0',
+87 silly addNameRange     '1.1.0',
+87 silly addNameRange     '1.1.1',
+87 silly addNameRange     '1.2.0',
+87 silly addNameRange     '1.9.0',
+87 silly addNameRange     '1.9.1',
+87 silly addNameRange     '1.9.2',
+87 silly addNameRange     '1.9.3',
+87 silly addNameRange     '1.9.5',
+87 silly addNameRange     '1.9.7',
+87 silly addNameRange     '1.9.8',
+87 silly addNameRange     '1.9.9',
+87 silly addNameRange     '2.0.0',
+87 silly addNameRange     '2.0.1',
+87 silly addNameRange     '2.0.2',
+87 silly addNameRange     '2.0.3',
+87 silly addNameRange     '2.0.4',
+87 silly addNameRange     '2.0.5',
+87 silly addNameRange     '2.1.0',
+87 silly addNameRange     '2.1.1',
+87 silly addNameRange     '2.2.0',
+87 silly addNameRange     '2.2.5',
+87 silly addNameRange     '2.2.6',
+87 silly addNameRange     '2.2.9',
+87 silly addNameRange     '2.9.0',
+87 silly addNameRange     '2.9.1',
+87 silly addNameRange     '2.9.2',
+87 silly addNameRange     '2.9.3',
+87 silly addNameRange     '2.9.100',
+87 silly addNameRange     '2.9.150',
+87 silly addNameRange     '2.9.151',
+87 silly addNameRange     '2.9.152',
+87 silly addNameRange     '2.9.153',
+87 silly addNameRange     '2.9.200',
+87 silly addNameRange     '2.9.201',
+87 silly addNameRange     '2.9.202',
+87 silly addNameRange     '2.9.203',
+87 silly addNameRange     '2.10.0',
+87 silly addNameRange     '2.11.0',
+87 silly addNameRange     '2.11.1',
+87 silly addNameRange     '2.11.2',
+87 silly addNameRange     '2.11.3',
+87 silly addNameRange     '2.11.4',
+87 silly addNameRange     '2.12.0',
+87 silly addNameRange     '2.14.0',
+87 silly addNameRange     '2.16.0',
+87 silly addNameRange     '2.16.2',
+87 silly addNameRange     '2.16.4',
+87 silly addNameRange     '2.16.6',
+87 silly addNameRange     '2.18.0',
+87 silly addNameRange     '2.19.0',
+87 silly addNameRange     '2.20.0',
+87 silly addNameRange     '2.21.0',
+87 silly addNameRange     '2.22.0',
+87 silly addNameRange     '2.23.0',
+87 silly addNameRange     '2.24.0',
+87 silly addNameRange     '2.25.0',
+87 silly addNameRange     '2.26.0',
+87 silly addNameRange     '2.27.0',
+87 silly addNameRange     '2.28.0',
+87 silly addNameRange     '2.29.0',
+87 silly addNameRange     '2.30.0',
+87 silly addNameRange     '2.31.0',
+87 silly addNameRange     '2.32.0',
+87 silly addNameRange     '2.33.0',
+87 silly addNameRange     '2.34.0',
+87 silly addNameRange     '2.35.0',
+87 silly addNameRange     '2.36.0',
+87 silly addNameRange     '2.37.0',
+87 silly addNameRange     '2.38.0',
+87 silly addNameRange     '2.39.0',
+87 silly addNameRange     '2.40.0',
+87 silly addNameRange     '2.41.0',
+87 silly addNameRange     '2.42.0',
+87 silly addNameRange     '2.43.0',
+87 silly addNameRange     '2.44.0',
+87 silly addNameRange     '2.45.0',
+87 silly addNameRange     '2.46.0',
+87 silly addNameRange     '2.47.0',
+87 silly addNameRange     '2.48.0',
+87 silly addNameRange     '2.49.0',
+87 silly addNameRange     '2.50.0',
+87 silly addNameRange     '2.51.0',
+87 silly addNameRange     '2.52.0',
+87 silly addNameRange     '2.53.0',
+87 silly addNameRange     '2.54.0',
+87 silly addNameRange     '2.55.0',
+87 silly addNameRange     '2.56.0',
+87 silly addNameRange     '2.57.0',
+87 silly addNameRange     '2.58.0' ] ]
+88 silly addNamed request@2.58.0
+89 verbose addNamed "2.58.0" is a plain semver version for request
+90 silly cache afterAdd chai@3.0.0
+91 verbose afterAdd /Users/Anjelica/.npm/chai/3.0.0/package/package.json not in flight; writing
+92 silly cache afterAdd request@2.58.0
+93 verbose afterAdd /Users/Anjelica/.npm/request/2.58.0/package/package.json not in flight; writing
+94 silly cache afterAdd mocha@2.2.5
+95 verbose afterAdd /Users/Anjelica/.npm/mocha/2.2.5/package/package.json not in flight; writing
+96 verbose afterAdd /Users/Anjelica/.npm/chai/3.0.0/package/package.json written
+97 verbose afterAdd /Users/Anjelica/.npm/request/2.58.0/package/package.json written
+98 verbose afterAdd /Users/Anjelica/.npm/mocha/2.2.5/package/package.json written
+99 silly install resolved [ { author: { name: 'Jake Luer', email: 'jake@alogicalparadox.com' },
+99 silly install resolved     name: 'chai',
+99 silly install resolved     description: 'BDD/TDD assertion library for node.js and the browser. Test framework agnostic.',
+99 silly install resolved     keywords: [ 'test', 'assertion', 'assert', 'testing', 'chai' ],
+99 silly install resolved     homepage: 'http://chaijs.com',
+99 silly install resolved     license: 'MIT',
+99 silly install resolved     contributors: [ [Object], [Object], [Object], [Object] ],
+99 silly install resolved     version: '3.0.0',
+99 silly install resolved     repository: { type: 'git', url: 'git+https://github.com/chaijs/chai.git' },
+99 silly install resolved     bugs: { url: 'https://github.com/chaijs/chai/issues' },
+99 silly install resolved     main: './index',
+99 silly install resolved     scripts: { test: 'make test' },
+99 silly install resolved     engines: { node: '>= 0.4.0' },
+99 silly install resolved     dependencies:
+99 silly install resolved      { 'assertion-error': '^1.0.1',
+99 silly install resolved        'deep-eql': '^0.1.3',
+99 silly install resolved        'type-detect': '^1.0.0' },
+99 silly install resolved     devDependencies:
+99 silly install resolved      { browserify: '^10.2.1',
+99 silly install resolved        'bump-cli': '^1.1.3',
+99 silly install resolved        karma: '^0.12.0',
+99 silly install resolved        'karma-mocha': '^0.1.10',
+99 silly install resolved        'karma-sauce-launcher': '^0.2.11',
+99 silly install resolved        'karma-phantomjs-launcher': '^0.2.0',
+99 silly install resolved        'karma-firefox-launcher': '^0.1.6',
+99 silly install resolved        mocha: '^2.2.5',
+99 silly install resolved        istanbul: '^0.3.14' },
+99 silly install resolved     gitHead: '084a419d81338b4559fb56a53ec48bb552f2be82',
+99 silly install resolved     _id: 'chai@3.0.0',
+99 silly install resolved     _shasum: '71bfd1034fc8c2d8c5053875bb38f59b2a6f1928',
+99 silly install resolved     _from: 'chai@>=3.0.0 <4.0.0',
+99 silly install resolved     _npmVersion: '1.4.28',
+99 silly install resolved     _npmUser: { name: 'chaijs', email: 'chaijs@keithcirkel.co.uk' },
+99 silly install resolved     maintainers: [ [Object], [Object] ],
+99 silly install resolved     dist:
+99 silly install resolved      { shasum: '71bfd1034fc8c2d8c5053875bb38f59b2a6f1928',
+99 silly install resolved        tarball: 'http://registry.npmjs.org/chai/-/chai-3.0.0.tgz' },
+99 silly install resolved     directories: {},
+99 silly install resolved     _resolved: 'https://registry.npmjs.org/chai/-/chai-3.0.0.tgz',
+99 silly install resolved     readme: 'ERROR: No README data found!' },
+99 silly install resolved   { name: 'request',
+99 silly install resolved     description: 'Simplified HTTP request client.',
+99 silly install resolved     tags: [ 'http', 'simple', 'util', 'utility' ],
+99 silly install resolved     version: '2.58.0',
+99 silly install resolved     author: { name: 'Mikeal Rogers', email: 'mikeal.rogers@gmail.com' },
+99 silly install resolved     repository:
+99 silly install resolved      { type: 'git',
+99 silly install resolved        url: 'git+https://github.com/request/request.git' },
+99 silly install resolved     bugs: { url: 'http://github.com/request/request/issues' },
+99 silly install resolved     license: 'Apache-2.0',
+99 silly install resolved     engines: { node: '>=0.8.0' },
+99 silly install resolved     main: 'index.js',
+99 silly install resolved     dependencies:
+99 silly install resolved      { bl: '~0.9.0',
+99 silly install resolved        caseless: '~0.10.0',
+99 silly install resolved        extend: '~2.0.1',
+99 silly install resolved        'forever-agent': '~0.6.0',
+99 silly install resolved        'form-data': '~1.0.0-rc1',
+99 silly install resolved        'json-stringify-safe': '~5.0.0',
+99 silly install resolved        'mime-types': '~2.0.1',
+99 silly install resolved        'node-uuid': '~1.4.0',
+99 silly install resolved        qs: '~3.1.0',
+99 silly install resolved        'tunnel-agent': '~0.4.0',
+99 silly install resolved        'tough-cookie': '>=0.12.0',
+99 silly install resolved        'http-signature': '~0.11.0',
+99 silly install resolved        'oauth-sign': '~0.8.0',
+99 silly install resolved        hawk: '~2.3.0',
+99 silly install resolved        'aws-sign2': '~0.5.0',
+99 silly install resolved        stringstream: '~0.0.4',
+99 silly install resolved        'combined-stream': '~1.0.1',
+99 silly install resolved        isstream: '~0.1.1',
+99 silly install resolved        'har-validator': '^1.6.1' },
+99 silly install resolved     scripts:
+99 silly install resolved      { test: 'npm run lint && npm run test-ci && npm run test-browser',
+99 silly install resolved        'test-ci': 'taper tests/test-*.js',
+99 silly install resolved        'test-cov': 'istanbul cover tape tests/test-*.js',
+99 silly install resolved        'test-browser': 'node tests/browser/start.js',
+99 silly install resolved        lint: 'eslint lib/ *.js tests/ && echo Lint passed.' },
+99 silly install resolved     devDependencies:
+99 silly install resolved      { browserify: '~5.9.1',
+99 silly install resolved        'browserify-istanbul': '~0.1.3',
+99 silly install resolved        'buffer-equal': '0.0.1',
+99 silly install resolved        'codecov.io': '~0.1.2',
+99 silly install resolved        coveralls: '~2.11.2',
+99 silly install resolved        eslint: '0.18.0',
+99 silly install resolved        'function-bind': '~1.0.0',
+99 silly install resolved        istanbul: '~0.3.2',
+99 silly install resolved        karma: '~0.12.21',
+99 silly install resolved        'karma-browserify': '~3.0.1',
+99 silly install resolved        'karma-cli': '0.0.4',
+99 silly install resolved        'karma-coverage': '0.2.6',
+99 silly install resolved        'karma-phantomjs-launcher': '~0.1.4',
+99 silly install resolved        'karma-tap': '~1.0.1',
+99 silly install resolved        rimraf: '~2.2.8',
+99 silly install resolved        'server-destroy': '~1.0.0',
+99 silly install resolved        tape: '~3.0.0',
+99 silly install resolved        taper: '~0.4.0',
+99 silly install resolved        bluebird: '~2.9.21' },
+99 silly install resolved     gitHead: 'ab40f9e61f813f9cc68257c17621b7879561486c',
+99 silly install resolved     homepage: 'https://github.com/request/request#readme',
+99 silly install resolved     _id: 'request@2.58.0',
+99 silly install resolved     _shasum: 'b5f49c0b94aab7fad388612a1fb6ad03b6cc1580',
+99 silly install resolved     _from: 'request@>=2.58.0 <3.0.0',
+99 silly install resolved     _npmVersion: '2.10.1',
+99 silly install resolved     _nodeVersion: '0.12.4',
+99 silly install resolved     _npmUser: { name: 'simov', email: 'simeonvelichkov@gmail.com' },
+99 silly install resolved     maintainers: [ [Object], [Object], [Object], [Object] ],
+99 silly install resolved     dist:
+99 silly install resolved      { shasum: 'b5f49c0b94aab7fad388612a1fb6ad03b6cc1580',
+99 silly install resolved        tarball: 'http://registry.npmjs.org/request/-/request-2.58.0.tgz' },
+99 silly install resolved     directories: {},
+99 silly install resolved     _resolved: 'https://registry.npmjs.org/request/-/request-2.58.0.tgz',
+99 silly install resolved     readme: 'ERROR: No README data found!' },
+99 silly install resolved   { name: 'mocha',
+99 silly install resolved     version: '2.2.5',
+99 silly install resolved     description: 'simple, flexible, fun test framework',
+99 silly install resolved     keywords: [ 'mocha', 'test', 'bdd', 'tdd', 'tap' ],
+99 silly install resolved     author: { name: 'TJ Holowaychuk', email: 'tj@vision-media.ca' },
+99 silly install resolved     contributors:
+99 silly install resolved      [ [Object],
+99 silly install resolved        [Object],
+99 silly install resolved        [Object],
+99 silly install resolved        [Object],
+99 silly install resolved        [Object],
+99 silly install resolved        [Object],
+99 silly install resolved        [Object],
+99 silly install resolved        [Object] ],
+99 silly install resolved     license: 'MIT',
+99 silly install resolved     repository: { type: 'git', url: 'git://github.com/mochajs/mocha.git' },
+99 silly install resolved     maintainers: [ [Object], [Object], [Object] ],
+99 silly install resolved     main: './index',
+99 silly install resolved     browser: './mocha.js',
+99 silly install resolved     bin: { mocha: './bin/mocha', _mocha: './bin/_mocha' },
+99 silly install resolved     engines: { node: '>= 0.8.x' },
+99 silly install resolved     scripts: { test: 'make test-all' },
+99 silly install resolved     dependencies:
+99 silly install resolved      { commander: '2.3.0',
+99 silly install resolved        debug: '2.0.0',
+99 silly install resolved        diff: '1.4.0',
+99 silly install resolved        'escape-string-regexp': '1.0.2',
+99 silly install resolved        glob: '3.2.3',
+99 silly install resolved        growl: '1.8.1',
+99 silly install resolved        jade: '0.26.3',
+99 silly install resolved        mkdirp: '0.5.0',
+99 silly install resolved        'supports-color': '~1.2.0' },
+99 silly install resolved     devDependencies: { 'coffee-script': '~1.8.0', should: '~4.0.0' },
+99 silly install resolved     files:
+99 silly install resolved      [ 'bin',
+99 silly install resolved        'images',
+99 silly install resolved        'lib',
+99 silly install resolved        'index.js',
+99 silly install resolved        'mocha.css',
+99 silly install resolved        'mocha.js',
+99 silly install resolved        'LICENSE' ],
+99 silly install resolved     licenses: [ [Object] ],
+99 silly install resolved     bugs: { url: 'https://github.com/mochajs/mocha/issues' },
+99 silly install resolved     homepage: 'https://github.com/mochajs/mocha',
+99 silly install resolved     _id: 'mocha@2.2.5',
+99 silly install resolved     _shasum: 'd3b72a4fe49ec9439353f1ac893dbc430d993140',
+99 silly install resolved     _from: 'mocha@>=2.2.5 <3.0.0',
+99 silly install resolved     _npmVersion: '1.4.9',
+99 silly install resolved     _npmUser: { name: 'travisjeffery', email: 'tj@travisjeffery.com' },
+99 silly install resolved     dist:
+99 silly install resolved      { shasum: 'd3b72a4fe49ec9439353f1ac893dbc430d993140',
+99 silly install resolved        tarball: 'http://registry.npmjs.org/mocha/-/mocha-2.2.5.tgz' },
+99 silly install resolved     directories: {},
+99 silly install resolved     _resolved: 'https://registry.npmjs.org/mocha/-/mocha-2.2.5.tgz',
+99 silly install resolved     readme: 'ERROR: No README data found!' } ]
+100 info install chai@3.0.0 into /Users/Anjelica/dev/new_node
+101 info install request@2.58.0 into /Users/Anjelica/dev/new_node
+102 info install mocha@2.2.5 into /Users/Anjelica/dev/new_node
+103 info installOne chai@3.0.0
+104 verbose installOne of chai to /Users/Anjelica/dev/new_node not in flight; installing
+105 info installOne request@2.58.0
+106 verbose installOne of request to /Users/Anjelica/dev/new_node not in flight; installing
+107 info installOne mocha@2.2.5
+108 verbose installOne of mocha to /Users/Anjelica/dev/new_node not in flight; installing
+109 verbose lock using /Users/Anjelica/.npm/_locks/chai-1866962058663ee9.lock for /Users/Anjelica/dev/new_node/node_modules/chai
+110 verbose lock using /Users/Anjelica/.npm/_locks/request-6e07a4a75253dfa8.lock for /Users/Anjelica/dev/new_node/node_modules/request
+111 verbose lock using /Users/Anjelica/.npm/_locks/mocha-cd036a0f26e5b7c0.lock for /Users/Anjelica/dev/new_node/node_modules/mocha
+112 silly install write writing chai 3.0.0 to /Users/Anjelica/dev/new_node/node_modules/chai
+113 silly install write writing request 2.58.0 to /Users/Anjelica/dev/new_node/node_modules/request
+114 silly install write writing mocha 2.2.5 to /Users/Anjelica/dev/new_node/node_modules/mocha
+115 verbose unbuild node_modules/chai
+116 verbose unbuild node_modules/request
+117 verbose unbuild node_modules/mocha
+118 info preuninstall chai@3.0.0
+119 info uninstall chai@3.0.0
+120 info preuninstall request@2.58.0
+121 verbose unbuild rmStuff chai@3.0.0 from /Users/Anjelica/dev/new_node/node_modules
+122 info postuninstall chai@3.0.0
+123 info preuninstall mocha@2.2.5
+124 info uninstall request@2.58.0
+125 silly gentlyRm /Users/Anjelica/dev/new_node/node_modules/chai is being purged from base /Users/Anjelica/dev/new_node
+126 verbose gentlyRm don't care about contents; nuking /Users/Anjelica/dev/new_node/node_modules/chai
+127 silly vacuum-fs purging /Users/Anjelica/dev/new_node/node_modules/chai
+128 info uninstall mocha@2.2.5
+129 verbose unbuild rmStuff request@2.58.0 from /Users/Anjelica/dev/new_node/node_modules
+130 info postuninstall request@2.58.0
+131 verbose unbuild rmStuff mocha@2.2.5 from /Users/Anjelica/dev/new_node/node_modules
+132 silly gentlyRm /Users/Anjelica/dev/new_node/node_modules/.bin/mocha is being gently removed
+133 silly gentlyRm verifying /Users/Anjelica/dev/new_node is an npm working directory
+134 silly gentlyRm /Users/Anjelica/dev/new_node/node_modules/.bin/_mocha is being gently removed
+135 silly gentlyRm verifying /Users/Anjelica/dev/new_node is an npm working directory
+136 silly gentlyRm /Users/Anjelica/dev/new_node/node_modules/request is being purged from base /Users/Anjelica/dev/new_node
+137 verbose gentlyRm don't care about contents; nuking /Users/Anjelica/dev/new_node/node_modules/request
+138 silly gentlyRm containing path /Users/Anjelica/dev/new_node is under npm's control, in /Users/Anjelica/dev/new_node
+139 silly gentlyRm deletion target /Users/Anjelica/dev/new_node/node_modules/.bin/mocha is under /Users/Anjelica/dev/new_node
+140 verbose gentlyRm vacuuming from /Users/Anjelica/dev/new_node/node_modules/.bin/mocha up to /Users/Anjelica/dev/new_node
+141 silly gentlyRm containing path /Users/Anjelica/dev/new_node is under npm's control, in /Users/Anjelica/dev/new_node
+142 silly gentlyRm deletion target /Users/Anjelica/dev/new_node/node_modules/.bin/_mocha is under /Users/Anjelica/dev/new_node
+143 verbose gentlyRm vacuuming from /Users/Anjelica/dev/new_node/node_modules/.bin/_mocha up to /Users/Anjelica/dev/new_node
+144 silly vacuum-fs purging /Users/Anjelica/dev/new_node/node_modules/request
+145 silly vacuum-fs removing /Users/Anjelica/dev/new_node/node_modules/.bin/mocha
+146 silly vacuum-fs removing /Users/Anjelica/dev/new_node/node_modules/.bin/_mocha
+147 verbose unlock done using /Users/Anjelica/.npm/_locks/mocha-cd036a0f26e5b7c0.lock for /Users/Anjelica/dev/new_node/node_modules/mocha
+148 verbose unlock done using /Users/Anjelica/.npm/_locks/request-6e07a4a75253dfa8.lock for /Users/Anjelica/dev/new_node/node_modules/request
+149 silly vacuum-fs quitting because other entries in /Users/Anjelica/dev/new_node/node_modules
+150 verbose tar unpack /Users/Anjelica/.npm/chai/3.0.0/package.tgz
+151 verbose tar unpacking to /Users/Anjelica/dev/new_node/node_modules/chai
+152 silly gentlyRm /Users/Anjelica/dev/new_node/node_modules/chai is being purged
+153 verbose gentlyRm don't care about contents; nuking /Users/Anjelica/dev/new_node/node_modules/chai
+154 silly gunzTarPerm modes [ '755', '644' ]
+155 silly gunzTarPerm extractEntry package.json
+156 silly gunzTarPerm modified mode [ 'package.json', 436, 420 ]
+157 silly gunzTarPerm extractEntry .npmignore
+158 silly gunzTarPerm modified mode [ '.npmignore', 436, 420 ]
+159 silly gunzTarPerm extractEntry README.md
+160 silly gunzTarPerm modified mode [ 'README.md', 436, 420 ]
+161 silly gunzTarPerm extractEntry chai.js
+162 silly gunzTarPerm modified mode [ 'chai.js', 436, 420 ]
+163 silly gunzTarPerm extractEntry index.js
+164 silly gunzTarPerm modified mode [ 'index.js', 436, 420 ]
+165 silly gunzTarPerm extractEntry karma.conf.js
+166 silly gunzTarPerm modified mode [ 'karma.conf.js', 436, 420 ]
+167 silly gunzTarPerm extractEntry karma.sauce.js
+168 silly gunzTarPerm modified mode [ 'karma.sauce.js', 436, 420 ]
+169 silly gunzTarPerm extractEntry sauce.browsers.js
+170 silly gunzTarPerm modified mode [ 'sauce.browsers.js', 436, 420 ]
+171 silly gunzTarPerm extractEntry ReleaseNotes.md
+172 silly gunzTarPerm modified mode [ 'ReleaseNotes.md', 436, 420 ]
+173 silly gunzTarPerm extractEntry bower.json
+174 silly gunzTarPerm modified mode [ 'bower.json', 436, 420 ]
+175 silly gunzTarPerm extractEntry CONTRIBUTING.md
+176 silly gunzTarPerm modified mode [ 'CONTRIBUTING.md', 436, 420 ]
+177 silly gunzTarPerm extractEntry lib/chai.js
+178 silly gunzTarPerm modified mode [ 'lib/chai.js', 436, 420 ]
+179 silly gunzTarPerm extractEntry lib/chai/assertion.js
+180 silly gunzTarPerm modified mode [ 'lib/chai/assertion.js', 436, 420 ]
+181 silly gunzTarPerm extractEntry lib/chai/config.js
+182 silly gunzTarPerm modified mode [ 'lib/chai/config.js', 436, 420 ]
+183 silly gunzTarPerm extractEntry lib/chai/core/assertions.js
+184 silly gunzTarPerm modified mode [ 'lib/chai/core/assertions.js', 436, 420 ]
+185 silly gunzTarPerm extractEntry lib/chai/interface/assert.js
+186 silly gunzTarPerm modified mode [ 'lib/chai/interface/assert.js', 436, 420 ]
+187 silly gunzTarPerm extractEntry lib/chai/interface/expect.js
+188 silly gunzTarPerm modified mode [ 'lib/chai/interface/expect.js', 436, 420 ]
+189 silly gunzTarPerm extractEntry lib/chai/interface/should.js
+190 silly gunzTarPerm modified mode [ 'lib/chai/interface/should.js', 436, 420 ]
+191 silly gunzTarPerm extractEntry lib/chai/utils/addChainableMethod.js
+192 silly gunzTarPerm modified mode [ 'lib/chai/utils/addChainableMethod.js', 436, 420 ]
+193 silly gunzTarPerm extractEntry lib/chai/utils/getMessage.js
+194 silly gunzTarPerm modified mode [ 'lib/chai/utils/getMessage.js', 436, 420 ]
+195 silly gunzTarPerm extractEntry lib/chai/utils/getName.js
+196 silly gunzTarPerm modified mode [ 'lib/chai/utils/getName.js', 436, 420 ]
+197 silly gunzTarPerm extractEntry lib/chai/utils/getPathInfo.js
+198 silly gunzTarPerm modified mode [ 'lib/chai/utils/getPathInfo.js', 436, 420 ]
+199 silly gunzTarPerm extractEntry lib/chai/utils/getPathValue.js
+200 silly gunzTarPerm modified mode [ 'lib/chai/utils/getPathValue.js', 436, 420 ]
+201 silly gunzTarPerm extractEntry lib/chai/utils/getEnumerableProperties.js
+202 silly gunzTarPerm modified mode [ 'lib/chai/utils/getEnumerableProperties.js', 436, 420 ]
+203 silly gunzTarPerm extractEntry lib/chai/utils/hasProperty.js
+204 silly gunzTarPerm modified mode [ 'lib/chai/utils/hasProperty.js', 436, 420 ]
+205 silly gunzTarPerm extractEntry lib/chai/utils/index.js
+206 silly gunzTarPerm modified mode [ 'lib/chai/utils/index.js', 436, 420 ]
+207 silly gunzTarPerm extractEntry lib/chai/utils/inspect.js
+208 silly gunzTarPerm modified mode [ 'lib/chai/utils/inspect.js', 436, 420 ]
+209 silly gunzTarPerm extractEntry lib/chai/utils/objDisplay.js
+210 silly gunzTarPerm modified mode [ 'lib/chai/utils/objDisplay.js', 436, 420 ]
+211 silly gunzTarPerm extractEntry lib/chai/utils/overwriteChainableMethod.js
+212 silly gunzTarPerm modified mode [ 'lib/chai/utils/overwriteChainableMethod.js', 436, 420 ]
+213 silly gunzTarPerm extractEntry lib/chai/utils/getActual.js
+214 silly gunzTarPerm modified mode [ 'lib/chai/utils/getActual.js', 436, 420 ]
+215 silly gunzTarPerm extractEntry lib/chai/utils/overwriteMethod.js
+216 silly gunzTarPerm modified mode [ 'lib/chai/utils/overwriteMethod.js', 436, 420 ]
+217 silly gunzTarPerm extractEntry lib/chai/utils/flag.js
+218 silly gunzTarPerm modified mode [ 'lib/chai/utils/flag.js', 436, 420 ]
+219 silly gunzTarPerm extractEntry lib/chai/utils/overwriteProperty.js
+220 silly gunzTarPerm modified mode [ 'lib/chai/utils/overwriteProperty.js', 436, 420 ]
+221 silly gunzTarPerm extractEntry lib/chai/utils/addProperty.js
+222 silly gunzTarPerm modified mode [ 'lib/chai/utils/addProperty.js', 436, 420 ]
+223 silly gunzTarPerm extractEntry lib/chai/utils/test.js
+224 silly gunzTarPerm modified mode [ 'lib/chai/utils/test.js', 436, 420 ]
+225 silly gunzTarPerm extractEntry lib/chai/utils/addMethod.js
+226 silly gunzTarPerm modified mode [ 'lib/chai/utils/addMethod.js', 436, 420 ]
+227 silly gunzTarPerm extractEntry lib/chai/utils/transferFlags.js
+228 silly gunzTarPerm modified mode [ 'lib/chai/utils/transferFlags.js', 436, 420 ]
+229 silly gunzTarPerm extractEntry lib/chai/utils/getProperties.js
+230 silly gunzTarPerm modified mode [ 'lib/chai/utils/getProperties.js', 436, 420 ]
+231 silly gunzTarPerm extractEntry History.md
+232 silly gunzTarPerm modified mode [ 'History.md', 436, 420 ]
+233 verbose write writing to /Users/Anjelica/dev/new_node/node_modules/chai/package.json
+234 info preinstall chai@3.0.0
+235 verbose readDependencies loading dependencies from /Users/Anjelica/dev/new_node/node_modules/chai/package.json
+236 silly prepareForInstallMany adding assertion-error@^1.0.1 from chai dependencies
+237 silly prepareForInstallMany adding deep-eql@^0.1.3 from chai dependencies
+238 silly prepareForInstallMany adding type-detect@^1.0.0 from chai dependencies
+239 verbose readDependencies loading dependencies from /Users/Anjelica/dev/new_node/node_modules/chai/package.json
+240 silly cache add args [ 'assertion-error@^1.0.1', null ]
+241 verbose cache add spec assertion-error@^1.0.1
+242 silly cache add args [ 'deep-eql@^0.1.3', null ]
+243 verbose cache add spec deep-eql@^0.1.3
+244 silly cache add parsed spec { raw: 'assertion-error@^1.0.1',
+244 silly cache add   scope: null,
+244 silly cache add   name: 'assertion-error',
+244 silly cache add   rawSpec: '^1.0.1',
+244 silly cache add   spec: '>=1.0.1 <2.0.0',
+244 silly cache add   type: 'range' }
+245 silly addNamed assertion-error@>=1.0.1 <2.0.0
+246 verbose addNamed ">=1.0.1 <2.0.0" is a valid semver range for assertion-error
+247 silly addNameRange { name: 'assertion-error',
+247 silly addNameRange   range: '>=1.0.1 <2.0.0',
+247 silly addNameRange   hasData: false }
+248 silly mapToRegistry name assertion-error
+249 silly mapToRegistry using default registry
+250 silly mapToRegistry registry https://registry.npmjs.org/
+251 silly mapToRegistry uri https://registry.npmjs.org/assertion-error
+252 verbose addNameRange registry:https://registry.npmjs.org/assertion-error not in flight; fetching
+253 silly cache add parsed spec { raw: 'deep-eql@^0.1.3',
+253 silly cache add   scope: null,
+253 silly cache add   name: 'deep-eql',
+253 silly cache add   rawSpec: '^0.1.3',
+253 silly cache add   spec: '>=0.1.3 <0.2.0',
+253 silly cache add   type: 'range' }
+254 silly addNamed deep-eql@>=0.1.3 <0.2.0
+255 verbose addNamed ">=0.1.3 <0.2.0" is a valid semver range for deep-eql
+256 silly addNameRange { name: 'deep-eql', range: '>=0.1.3 <0.2.0', hasData: false }
+257 silly mapToRegistry name deep-eql
+258 silly mapToRegistry using default registry
+259 silly mapToRegistry registry https://registry.npmjs.org/
+260 silly mapToRegistry uri https://registry.npmjs.org/deep-eql
+261 verbose addNameRange registry:https://registry.npmjs.org/deep-eql not in flight; fetching
+262 silly cache add args [ 'type-detect@^1.0.0', null ]
+263 verbose cache add spec type-detect@^1.0.0
+264 silly cache add parsed spec { raw: 'type-detect@^1.0.0',
+264 silly cache add   scope: null,
+264 silly cache add   name: 'type-detect',
+264 silly cache add   rawSpec: '^1.0.0',
+264 silly cache add   spec: '>=1.0.0 <2.0.0',
+264 silly cache add   type: 'range' }
+265 silly addNamed type-detect@>=1.0.0 <2.0.0
+266 verbose addNamed ">=1.0.0 <2.0.0" is a valid semver range for type-detect
+267 silly addNameRange { name: 'type-detect', range: '>=1.0.0 <2.0.0', hasData: false }
+268 silly mapToRegistry name type-detect
+269 silly mapToRegistry using default registry
+270 silly mapToRegistry registry https://registry.npmjs.org/
+271 silly mapToRegistry uri https://registry.npmjs.org/type-detect
+272 verbose addNameRange registry:https://registry.npmjs.org/type-detect not in flight; fetching
+273 verbose request uri https://registry.npmjs.org/assertion-error
+274 verbose request no auth needed
+275 info attempt registry request try #1 at 17:43:29
+276 verbose etag "24FGJ5E43YUU76OMKWEHAIZNF"
+277 http request GET https://registry.npmjs.org/assertion-error
+278 verbose request uri https://registry.npmjs.org/deep-eql
+279 verbose request no auth needed
+280 info attempt registry request try #1 at 17:43:29
+281 verbose etag "4J4CQZCY7T9LYAX8QU0YTYBMA"
+282 http request GET https://registry.npmjs.org/deep-eql
+283 verbose request uri https://registry.npmjs.org/type-detect
+284 verbose request no auth needed
+285 info attempt registry request try #1 at 17:43:29
+286 verbose etag "9DDN9OVCPG8TXADH24J312J20"
+287 http request GET https://registry.npmjs.org/type-detect
+288 http 304 https://registry.npmjs.org/assertion-error
+289 silly get cb [ 304,
+289 silly get   { date: 'Fri, 10 Jul 2015 00:43:29 GMT',
+289 silly get     via: '1.1 varnish',
+289 silly get     'cache-control': 'max-age=60',
+289 silly get     etag: '"24FGJ5E43YUU76OMKWEHAIZNF"',
+289 silly get     age: '22',
+289 silly get     connection: 'keep-alive',
+289 silly get     'x-served-by': 'cache-sjc3120-SJC',
+289 silly get     'x-cache': 'HIT',
+289 silly get     'x-cache-hits': '1',
+289 silly get     'x-timer': 'S1436489009.900108,VS0,VE0',
+289 silly get     vary: 'Accept' } ]
+290 verbose etag https://registry.npmjs.org/assertion-error from cache
+291 verbose get saving assertion-error to /Users/Anjelica/.npm/registry.npmjs.org/assertion-error/.cache.json
+292 http 304 https://registry.npmjs.org/deep-eql
+293 silly get cb [ 304,
+293 silly get   { date: 'Fri, 10 Jul 2015 00:43:29 GMT',
+293 silly get     via: '1.1 varnish',
+293 silly get     'cache-control': 'max-age=60',
+293 silly get     etag: '"4J4CQZCY7T9LYAX8QU0YTYBMA"',
+293 silly get     age: '22',
+293 silly get     connection: 'keep-alive',
+293 silly get     'x-served-by': 'cache-sjc3120-SJC',
+293 silly get     'x-cache': 'HIT',
+293 silly get     'x-cache-hits': '1',
+293 silly get     'x-timer': 'S1436489009.901318,VS0,VE0',
+293 silly get     vary: 'Accept' } ]
+294 verbose etag https://registry.npmjs.org/deep-eql from cache
+295 verbose get saving deep-eql to /Users/Anjelica/.npm/registry.npmjs.org/deep-eql/.cache.json
+296 silly addNameRange number 2 { name: 'assertion-error',
+296 silly addNameRange   range: '>=1.0.1 <2.0.0',
+296 silly addNameRange   hasData: true }
+297 silly addNameRange versions [ 'assertion-error', [ '0.1.0', '1.0.0', '1.0.1' ] ]
+298 silly addNamed assertion-error@1.0.1
+299 verbose addNamed "1.0.1" is a plain semver version for assertion-error
+300 silly addNameRange number 2 { name: 'deep-eql', range: '>=0.1.3 <0.2.0', hasData: true }
+301 silly addNameRange versions [ 'deep-eql', [ '0.1.0', '0.1.1', '0.1.2', '0.1.3' ] ]
+302 silly addNamed deep-eql@0.1.3
+303 verbose addNamed "0.1.3" is a plain semver version for deep-eql
+304 http 304 https://registry.npmjs.org/type-detect
+305 silly get cb [ 304,
+305 silly get   { date: 'Fri, 10 Jul 2015 00:43:29 GMT',
+305 silly get     via: '1.1 varnish',
+305 silly get     'cache-control': 'max-age=60',
+305 silly get     etag: '"9DDN9OVCPG8TXADH24J312J20"',
+305 silly get     age: '21',
+305 silly get     connection: 'keep-alive',
+305 silly get     'x-served-by': 'cache-sjc3124-SJC',
+305 silly get     'x-cache': 'HIT',
+305 silly get     'x-cache-hits': '1',
+305 silly get     'x-timer': 'S1436489009.918279,VS0,VE0',
+305 silly get     vary: 'Accept' } ]
+306 verbose etag https://registry.npmjs.org/type-detect from cache
+307 verbose get saving type-detect to /Users/Anjelica/.npm/registry.npmjs.org/type-detect/.cache.json
+308 silly cache afterAdd assertion-error@1.0.1
+309 verbose afterAdd /Users/Anjelica/.npm/assertion-error/1.0.1/package/package.json not in flight; writing
+310 silly addNameRange number 2 { name: 'type-detect', range: '>=1.0.0 <2.0.0', hasData: true }
+311 silly addNameRange versions [ 'type-detect', [ '0.1.0', '0.1.1', '0.1.2', '1.0.0' ] ]
+312 silly addNamed type-detect@1.0.0
+313 verbose addNamed "1.0.0" is a plain semver version for type-detect
+314 silly cache afterAdd deep-eql@0.1.3
+315 verbose afterAdd /Users/Anjelica/.npm/deep-eql/0.1.3/package/package.json not in flight; writing
+316 verbose afterAdd /Users/Anjelica/.npm/assertion-error/1.0.1/package/package.json written
+317 silly cache afterAdd type-detect@1.0.0
+318 verbose afterAdd /Users/Anjelica/.npm/type-detect/1.0.0/package/package.json not in flight; writing
+319 verbose afterAdd /Users/Anjelica/.npm/deep-eql/0.1.3/package/package.json written
+320 verbose afterAdd /Users/Anjelica/.npm/type-detect/1.0.0/package/package.json written
+321 silly install resolved [ { name: 'assertion-error',
+321 silly install resolved     version: '1.0.1',
+321 silly install resolved     description: 'Error constructor for test and validation frameworks that implements standardized AssertionError specification.',
+321 silly install resolved     author:
+321 silly install resolved      { name: 'Jake Luer',
+321 silly install resolved        email: 'jake@qualiancy.com',
+321 silly install resolved        url: 'http://qualiancy.com' },
+321 silly install resolved     license: 'MIT',
+321 silly install resolved     keywords: [ 'test', 'assertion', 'assertion-error' ],
+321 silly install resolved     repository:
+321 silly install resolved      { type: 'git',
+321 silly install resolved        url: 'git+ssh://git@github.com/chaijs/assertion-error.git' },
+321 silly install resolved     engines: { node: '*' },
+321 silly install resolved     main: './index',
+321 silly install resolved     scripts: { test: 'make test' },
+321 silly install resolved     dependencies: {},
+321 silly install resolved     devDependencies: { component: '*' },
+321 silly install resolved     gitHead: 'db10d2fc753f00b3dad24956921056eaf1e03708',
+321 silly install resolved     bugs: { url: 'https://github.com/chaijs/assertion-error/issues' },
+321 silly install resolved     homepage: 'https://github.com/chaijs/assertion-error',
+321 silly install resolved     _id: 'assertion-error@1.0.1',
+321 silly install resolved     _shasum: '35aaeec33097f11f42399ecadf33faccd27f5c4c',
+321 silly install resolved     _from: 'assertion-error@>=1.0.1 <2.0.0',
+321 silly install resolved     _npmVersion: '1.4.28',
+321 silly install resolved     _npmUser: { name: 'jakeluer', email: 'jake@alogicalparadox.com' },
+321 silly install resolved     maintainers: [ [Object] ],
+321 silly install resolved     dist:
+321 silly install resolved      { shasum: '35aaeec33097f11f42399ecadf33faccd27f5c4c',
+321 silly install resolved        tarball: 'http://registry.npmjs.org/assertion-error/-/assertion-error-1.0.1.tgz' },
+321 silly install resolved     directories: {},
+321 silly install resolved     _resolved: 'https://registry.npmjs.org/assertion-error/-/assertion-error-1.0.1.tgz',
+321 silly install resolved     readme: 'ERROR: No README data found!' },
+321 silly install resolved   { name: 'deep-eql',
+321 silly install resolved     version: '0.1.3',
+321 silly install resolved     description: 'Improved deep equality testing for Node.js and the browser.',
+321 silly install resolved     author: { name: 'Jake Luer', email: 'jake@alogicalparadox.com' },
+321 silly install resolved     license: 'MIT',
+321 silly install resolved     keywords: [ 'deep equal', 'object equal', 'testing', 'chai util' ],
+321 silly install resolved     repository:
+321 silly install resolved      { type: 'git',
+321 silly install resolved        url: 'git+ssh://git@github.com/chaijs/deep-eql.git' },
+321 silly install resolved     engines: { node: '*' },
+321 silly install resolved     main: './index',
+321 silly install resolved     scripts: { test: 'make test' },
+321 silly install resolved     dependencies: { 'type-detect': '0.1.1' },
+321 silly install resolved     devDependencies:
+321 silly install resolved      { component: '*',
+321 silly install resolved        coveralls: '2.0.16',
+321 silly install resolved        jscoverage: '0.3.7',
+321 silly install resolved        karma: '0.10.x',
+321 silly install resolved        'karma-mocha': '*',
+321 silly install resolved        mocha: '*',
+321 silly install resolved        'mocha-lcov-reporter': '0.0.1',
+321 silly install resolved        'simple-assert': '*' },
+321 silly install resolved     bugs: { url: 'https://github.com/chaijs/deep-eql/issues' },
+321 silly install resolved     _id: 'deep-eql@0.1.3',
+321 silly install resolved     dist:
+321 silly install resolved      { shasum: 'ef558acab8de25206cd713906d74e56930eb69f2',
+321 silly install resolved        tarball: 'http://registry.npmjs.org/deep-eql/-/deep-eql-0.1.3.tgz' },
+321 silly install resolved     _from: 'deep-eql@>=0.1.3 <0.2.0',
+321 silly install resolved     _npmVersion: '1.3.11',
+321 silly install resolved     _npmUser: { name: 'jakeluer', email: 'jake@alogicalparadox.com' },
+321 silly install resolved     maintainers: [ [Object] ],
+321 silly install resolved     directories: {},
+321 silly install resolved     _shasum: 'ef558acab8de25206cd713906d74e56930eb69f2',
+321 silly install resolved     _resolved: 'https://registry.npmjs.org/deep-eql/-/deep-eql-0.1.3.tgz',
+321 silly install resolved     readme: 'ERROR: No README data found!',
+321 silly install resolved     homepage: 'https://github.com/chaijs/deep-eql#readme' },
+321 silly install resolved   { name: 'type-detect',
+321 silly install resolved     version: '1.0.0',
+321 silly install resolved     description: 'Improved typeof detection for node.js and the browser.',
+321 silly install resolved     author:
+321 silly install resolved      { name: 'Jake Luer',
+321 silly install resolved        email: 'jake@alogicalparadox.com',
+321 silly install resolved        url: 'http://alogicalparadox.com' },
+321 silly install resolved     license: 'MIT',
+321 silly install resolved     keywords: [],
+321 silly install resolved     repository:
+321 silly install resolved      { type: 'git',
+321 silly install resolved        url: 'git+ssh://git@github.com/chaijs/type-detect.git' },
+321 silly install resolved     engines: { node: '*' },
+321 silly install resolved     main: './index',
+321 silly install resolved     scripts: { test: 'make test' },
+321 silly install resolved     dependencies: {},
+321 silly install resolved     devDependencies:
+321 silly install resolved      { component: '*',
+321 silly install resolved        coveralls: '2.0.16',
+321 silly install resolved        jscoverage: '0.3.7',
+321 silly install resolved        mocha: '*',
+321 silly install resolved        'mocha-lcov-reporter': '0.0.1',
+321 silly install resolved        'mocha-phantomjs': '*',
+321 silly install resolved        'simple-assert': '*' },
+321 silly install resolved     gitHead: '3617862cbaa220d3700cfc9e96c6d3feb49e9587',
+321 silly install resolved     bugs: { url: 'https://github.com/chaijs/type-detect/issues' },
+321 silly install resolved     homepage: 'https://github.com/chaijs/type-detect',
+321 silly install resolved     _id: 'type-detect@1.0.0',
+321 silly install resolved     _shasum: '762217cc06db258ec48908a1298e8b95121e8ea2',
+321 silly install resolved     _from: 'type-detect@>=1.0.0 <2.0.0',
+321 silly install resolved     _npmVersion: '2.3.0',
+321 silly install resolved     _nodeVersion: '0.11.16',
+321 silly install resolved     _npmUser: { name: 'jakeluer', email: 'jake@alogicalparadox.com' },
+321 silly install resolved     maintainers: [ [Object] ],
+321 silly install resolved     dist:
+321 silly install resolved      { shasum: '762217cc06db258ec48908a1298e8b95121e8ea2',
+321 silly install resolved        tarball: 'http://registry.npmjs.org/type-detect/-/type-detect-1.0.0.tgz' },
+321 silly install resolved     directories: {},
+321 silly install resolved     _resolved: 'https://registry.npmjs.org/type-detect/-/type-detect-1.0.0.tgz',
+321 silly install resolved     readme: 'ERROR: No README data found!' } ]
+322 info install assertion-error@1.0.1 into /Users/Anjelica/dev/new_node/node_modules/chai
+323 info install deep-eql@0.1.3 into /Users/Anjelica/dev/new_node/node_modules/chai
+324 info install type-detect@1.0.0 into /Users/Anjelica/dev/new_node/node_modules/chai
+325 info installOne assertion-error@1.0.1
+326 verbose installOne of assertion-error to /Users/Anjelica/dev/new_node/node_modules/chai not in flight; installing
+327 info installOne deep-eql@0.1.3
+328 verbose installOne of deep-eql to /Users/Anjelica/dev/new_node/node_modules/chai not in flight; installing
+329 info installOne type-detect@1.0.0
+330 verbose installOne of type-detect to /Users/Anjelica/dev/new_node/node_modules/chai not in flight; installing
+331 verbose lock using /Users/Anjelica/.npm/_locks/assertion-error-8f5a33dabfcaf8a9.lock for /Users/Anjelica/dev/new_node/node_modules/chai/node_modules/assertion-error
+332 verbose lock using /Users/Anjelica/.npm/_locks/deep-eql-f689e15e63308ab1.lock for /Users/Anjelica/dev/new_node/node_modules/chai/node_modules/deep-eql
+333 silly install write writing assertion-error 1.0.1 to /Users/Anjelica/dev/new_node/node_modules/chai/node_modules/assertion-error
+334 silly install write writing deep-eql 0.1.3 to /Users/Anjelica/dev/new_node/node_modules/chai/node_modules/deep-eql
+335 verbose lock using /Users/Anjelica/.npm/_locks/type-detect-a30e1354cf1dd36c.lock for /Users/Anjelica/dev/new_node/node_modules/chai/node_modules/type-detect
+336 silly install write writing type-detect 1.0.0 to /Users/Anjelica/dev/new_node/node_modules/chai/node_modules/type-detect
+337 verbose unbuild node_modules/chai/node_modules/assertion-error
+338 silly gentlyRm /Users/Anjelica/dev/new_node/node_modules/chai/node_modules/assertion-error is being purged from base /Users/Anjelica/dev/new_node
+339 verbose gentlyRm don't care about contents; nuking /Users/Anjelica/dev/new_node/node_modules/chai/node_modules/assertion-error
+340 verbose tar unpack /Users/Anjelica/.npm/assertion-error/1.0.1/package.tgz
+341 verbose tar unpacking to /Users/Anjelica/dev/new_node/node_modules/chai/node_modules/assertion-error
+342 silly gentlyRm /Users/Anjelica/dev/new_node/node_modules/chai/node_modules/assertion-error is being purged
+343 verbose gentlyRm don't care about contents; nuking /Users/Anjelica/dev/new_node/node_modules/chai/node_modules/assertion-error
+344 silly gunzTarPerm modes [ '755', '644' ]
+345 verbose unbuild node_modules/chai/node_modules/deep-eql
+346 verbose unbuild node_modules/chai/node_modules/type-detect
+347 silly gentlyRm /Users/Anjelica/dev/new_node/node_modules/chai/node_modules/deep-eql is being purged from base /Users/Anjelica/dev/new_node
+348 verbose gentlyRm don't care about contents; nuking /Users/Anjelica/dev/new_node/node_modules/chai/node_modules/deep-eql
+349 verbose tar unpack /Users/Anjelica/.npm/deep-eql/0.1.3/package.tgz
+350 verbose tar unpacking to /Users/Anjelica/dev/new_node/node_modules/chai/node_modules/deep-eql
+351 silly gentlyRm /Users/Anjelica/dev/new_node/node_modules/chai/node_modules/deep-eql is being purged
+352 verbose gentlyRm don't care about contents; nuking /Users/Anjelica/dev/new_node/node_modules/chai/node_modules/deep-eql
+353 silly gentlyRm /Users/Anjelica/dev/new_node/node_modules/chai/node_modules/type-detect is being purged from base /Users/Anjelica/dev/new_node
+354 verbose gentlyRm don't care about contents; nuking /Users/Anjelica/dev/new_node/node_modules/chai/node_modules/type-detect
+355 silly gunzTarPerm modes [ '755', '644' ]
+356 silly gunzTarPerm extractEntry package.json
+357 verbose tar unpack /Users/Anjelica/.npm/type-detect/1.0.0/package.tgz
+358 verbose tar unpacking to /Users/Anjelica/dev/new_node/node_modules/chai/node_modules/type-detect
+359 silly gentlyRm /Users/Anjelica/dev/new_node/node_modules/chai/node_modules/type-detect is being purged
+360 verbose gentlyRm don't care about contents; nuking /Users/Anjelica/dev/new_node/node_modules/chai/node_modules/type-detect
+361 silly gunzTarPerm modes [ '755', '644' ]
+362 silly gunzTarPerm extractEntry .npmignore
+363 silly gunzTarPerm extractEntry README.md
+364 silly gunzTarPerm extractEntry package.json
+365 silly gunzTarPerm extractEntry package.json
+366 silly gunzTarPerm modified mode [ 'package.json', 436, 420 ]
+367 silly gunzTarPerm extractEntry .npmignore
+368 silly gunzTarPerm extractEntry README.md
+369 silly gunzTarPerm extractEntry .npmignore
+370 silly gunzTarPerm modified mode [ '.npmignore', 436, 420 ]
+371 silly gunzTarPerm extractEntry README.md
+372 silly gunzTarPerm modified mode [ 'README.md', 436, 420 ]
+373 silly gunzTarPerm extractEntry index.js
+374 silly gunzTarPerm extractEntry History.md
+375 silly gunzTarPerm extractEntry index.js
+376 silly gunzTarPerm extractEntry karma.conf.js
+377 silly gunzTarPerm extractEntry index.js
+378 silly gunzTarPerm modified mode [ 'index.js', 436, 420 ]
+379 silly gunzTarPerm extractEntry History.md
+380 silly gunzTarPerm modified mode [ 'History.md', 436, 420 ]
+381 silly gunzTarPerm extractEntry History.md
+382 silly gunzTarPerm extractEntry lib/eql.js
+383 silly gunzTarPerm extractEntry ReleaseNotes.md
+384 silly gunzTarPerm modified mode [ 'ReleaseNotes.md', 436, 420 ]
+385 silly gunzTarPerm extractEntry lib/type.js
+386 silly gunzTarPerm modified mode [ 'lib/type.js', 436, 420 ]
+387 verbose write writing to /Users/Anjelica/dev/new_node/node_modules/chai/node_modules/assertion-error/package.json
+388 info preinstall assertion-error@1.0.1
+389 verbose readDependencies loading dependencies from /Users/Anjelica/dev/new_node/node_modules/chai/node_modules/assertion-error/package.json
+390 verbose readDependencies loading dependencies from /Users/Anjelica/dev/new_node/node_modules/chai/node_modules/assertion-error/package.json
+391 silly install resolved []
+392 verbose about to build /Users/Anjelica/dev/new_node/node_modules/chai/node_modules/assertion-error
+393 info build /Users/Anjelica/dev/new_node/node_modules/chai/node_modules/assertion-error
+394 info linkStuff assertion-error@1.0.1
+395 silly linkStuff assertion-error@1.0.1 has /Users/Anjelica/dev/new_node/node_modules/chai/node_modules as its parent node_modules
+396 verbose write writing to /Users/Anjelica/dev/new_node/node_modules/chai/node_modules/deep-eql/package.json
+397 verbose linkBins assertion-error@1.0.1
+398 verbose linkMans assertion-error@1.0.1
+399 verbose rebuildBundles assertion-error@1.0.1
+400 info install assertion-error@1.0.1
+401 info preinstall deep-eql@0.1.3
+402 info postinstall assertion-error@1.0.1
+403 verbose readDependencies loading dependencies from /Users/Anjelica/dev/new_node/node_modules/chai/node_modules/deep-eql/package.json
+404 verbose unlock done using /Users/Anjelica/.npm/_locks/assertion-error-8f5a33dabfcaf8a9.lock for /Users/Anjelica/dev/new_node/node_modules/chai/node_modules/assertion-error
+405 verbose write writing to /Users/Anjelica/dev/new_node/node_modules/chai/node_modules/type-detect/package.json
+406 silly prepareForInstallMany adding type-detect@0.1.1 from deep-eql dependencies
+407 verbose readDependencies loading dependencies from /Users/Anjelica/dev/new_node/node_modules/chai/node_modules/deep-eql/package.json
+408 info preinstall type-detect@1.0.0
+409 verbose readDependencies loading dependencies from /Users/Anjelica/dev/new_node/node_modules/chai/node_modules/type-detect/package.json
+410 silly cache add args [ 'type-detect@0.1.1', null ]
+411 verbose cache add spec type-detect@0.1.1
+412 silly cache add parsed spec { raw: 'type-detect@0.1.1',
+412 silly cache add   scope: null,
+412 silly cache add   name: 'type-detect',
+412 silly cache add   rawSpec: '0.1.1',
+412 silly cache add   spec: '0.1.1',
+412 silly cache add   type: 'version' }
+413 silly addNamed type-detect@0.1.1
+414 verbose addNamed "0.1.1" is a plain semver version for type-detect
+415 silly mapToRegistry name type-detect
+416 silly mapToRegistry using default registry
+417 silly mapToRegistry registry https://registry.npmjs.org/
+418 silly mapToRegistry uri https://registry.npmjs.org/type-detect
+419 verbose addNameVersion registry:https://registry.npmjs.org/type-detect not in flight; fetching
+420 verbose readDependencies loading dependencies from /Users/Anjelica/dev/new_node/node_modules/chai/node_modules/type-detect/package.json
+421 verbose get https://registry.npmjs.org/type-detect not expired, no request
+422 silly install resolved []
+423 verbose about to build /Users/Anjelica/dev/new_node/node_modules/chai/node_modules/type-detect
+424 info build /Users/Anjelica/dev/new_node/node_modules/chai/node_modules/type-detect
+425 silly cache afterAdd type-detect@0.1.1
+426 verbose afterAdd /Users/Anjelica/.npm/type-detect/0.1.1/package/package.json not in flight; writing
+427 info linkStuff type-detect@1.0.0
+428 silly linkStuff type-detect@1.0.0 has /Users/Anjelica/dev/new_node/node_modules/chai/node_modules as its parent node_modules
+429 verbose afterAdd /Users/Anjelica/.npm/type-detect/0.1.1/package/package.json written
+430 silly install resolved [ { name: 'type-detect',
+430 silly install resolved     version: '0.1.1',
+430 silly install resolved     description: 'Improved typeof detection for node.js and the browser.',
+430 silly install resolved     author:
+430 silly install resolved      { name: 'Jake Luer',
+430 silly install resolved        email: 'jake@alogicalparadox.com',
+430 silly install resolved        url: 'http://alogicalparadox.com' },
+430 silly install resolved     license: 'MIT',
+430 silly install resolved     keywords: [],
+430 silly install resolved     repository:
+430 silly install resolved      { type: 'git',
+430 silly install resolved        url: 'git+ssh://git@github.com/chaijs/type-detect.git' },
+430 silly install resolved     engines: { node: '*' },
+430 silly install resolved     main: './index',
+430 silly install resolved     scripts: { test: 'make test' },
+430 silly install resolved     dependencies: {},
+430 silly install resolved     devDependencies:
+430 silly install resolved      { component: '*',
+430 silly install resolved        coveralls: '2.0.16',
+430 silly install resolved        jscoverage: '0.3.7',
+430 silly install resolved        mocha: '*',
+430 silly install resolved        'mocha-lcov-reporter': '0.0.1',
+430 silly install resolved        'mocha-phantomjs': '*',
+430 silly install resolved        'simple-assert': '*' },
+430 silly install resolved     bugs: { url: 'https://github.com/chaijs/type-detect/issues' },
+430 silly install resolved     _id: 'type-detect@0.1.1',
+430 silly install resolved     dist:
+430 silly install resolved      { shasum: '0ba5ec2a885640e470ea4e8505971900dac58822',
+430 silly install resolved        tarball: 'http://registry.npmjs.org/type-detect/-/type-detect-0.1.1.tgz' },
+430 silly install resolved     _from: 'type-detect@0.1.1',
+430 silly install resolved     _npmVersion: '1.3.11',
+430 silly install resolved     _npmUser: { name: 'jakeluer', email: 'jake@alogicalparadox.com' },
+430 silly install resolved     maintainers: [ [Object] ],
+430 silly install resolved     directories: {},
+430 silly install resolved     _shasum: '0ba5ec2a885640e470ea4e8505971900dac58822',
+430 silly install resolved     _resolved: 'https://registry.npmjs.org/type-detect/-/type-detect-0.1.1.tgz',
+430 silly install resolved     readme: 'ERROR: No README data found!',
+430 silly install resolved     homepage: 'https://github.com/chaijs/type-detect#readme' } ]
+431 info install type-detect@0.1.1 into /Users/Anjelica/dev/new_node/node_modules/chai/node_modules/deep-eql
+432 info installOne type-detect@0.1.1
+433 verbose installOne of type-detect to /Users/Anjelica/dev/new_node/node_modules/chai/node_modules/deep-eql not in flight; installing
+434 verbose lock using /Users/Anjelica/.npm/_locks/type-detect-7c84c603347e5447.lock for /Users/Anjelica/dev/new_node/node_modules/chai/node_modules/deep-eql/node_modules/type-detect
+435 silly install write writing type-detect 0.1.1 to /Users/Anjelica/dev/new_node/node_modules/chai/node_modules/deep-eql/node_modules/type-detect
+436 verbose linkBins type-detect@1.0.0
+437 verbose linkMans type-detect@1.0.0
+438 verbose rebuildBundles type-detect@1.0.0
+439 info install type-detect@1.0.0
+440 info postinstall type-detect@1.0.0
+441 verbose unlock done using /Users/Anjelica/.npm/_locks/type-detect-a30e1354cf1dd36c.lock for /Users/Anjelica/dev/new_node/node_modules/chai/node_modules/type-detect
+442 verbose unbuild node_modules/chai/node_modules/deep-eql/node_modules/type-detect
+443 silly gentlyRm /Users/Anjelica/dev/new_node/node_modules/chai/node_modules/deep-eql/node_modules/type-detect is being purged from base /Users/Anjelica/dev/new_node
+444 verbose gentlyRm don't care about contents; nuking /Users/Anjelica/dev/new_node/node_modules/chai/node_modules/deep-eql/node_modules/type-detect
+445 verbose tar unpack /Users/Anjelica/.npm/type-detect/0.1.1/package.tgz
+446 verbose tar unpacking to /Users/Anjelica/dev/new_node/node_modules/chai/node_modules/deep-eql/node_modules/type-detect
+447 silly gentlyRm /Users/Anjelica/dev/new_node/node_modules/chai/node_modules/deep-eql/node_modules/type-detect is being purged
+448 verbose gentlyRm don't care about contents; nuking /Users/Anjelica/dev/new_node/node_modules/chai/node_modules/deep-eql/node_modules/type-detect
+449 silly gunzTarPerm modes [ '755', '644' ]
+450 silly gunzTarPerm extractEntry package.json
+451 silly gunzTarPerm extractEntry .npmignore
+452 silly gunzTarPerm extractEntry README.md
+453 silly gunzTarPerm extractEntry index.js
+454 silly gunzTarPerm extractEntry History.md
+455 silly gunzTarPerm extractEntry lib/type.js
+456 verbose write writing to /Users/Anjelica/dev/new_node/node_modules/chai/node_modules/deep-eql/node_modules/type-detect/package.json
+457 info preinstall type-detect@0.1.1
+458 verbose readDependencies loading dependencies from /Users/Anjelica/dev/new_node/node_modules/chai/node_modules/deep-eql/node_modules/type-detect/package.json
+459 verbose readDependencies loading dependencies from /Users/Anjelica/dev/new_node/node_modules/chai/node_modules/deep-eql/node_modules/type-detect/package.json
+460 silly install resolved []
+461 verbose about to build /Users/Anjelica/dev/new_node/node_modules/chai/node_modules/deep-eql/node_modules/type-detect
+462 info build /Users/Anjelica/dev/new_node/node_modules/chai/node_modules/deep-eql/node_modules/type-detect
+463 info linkStuff type-detect@0.1.1
+464 silly linkStuff type-detect@0.1.1 has /Users/Anjelica/dev/new_node/node_modules/chai/node_modules/deep-eql/node_modules as its parent node_modules
+465 verbose linkBins type-detect@0.1.1
+466 verbose linkMans type-detect@0.1.1
+467 verbose rebuildBundles type-detect@0.1.1
+468 info install type-detect@0.1.1
+469 info postinstall type-detect@0.1.1
+470 verbose unlock done using /Users/Anjelica/.npm/_locks/type-detect-7c84c603347e5447.lock for /Users/Anjelica/dev/new_node/node_modules/chai/node_modules/deep-eql/node_modules/type-detect
+471 verbose about to build /Users/Anjelica/dev/new_node/node_modules/chai/node_modules/deep-eql
+472 info build /Users/Anjelica/dev/new_node/node_modules/chai/node_modules/deep-eql
+473 info linkStuff deep-eql@0.1.3
+474 silly linkStuff deep-eql@0.1.3 has /Users/Anjelica/dev/new_node/node_modules/chai/node_modules as its parent node_modules
+475 verbose linkBins deep-eql@0.1.3
+476 verbose linkMans deep-eql@0.1.3
+477 verbose rebuildBundles deep-eql@0.1.3
+478 verbose rebuildBundles [ 'type-detect' ]
+479 info install deep-eql@0.1.3
+480 info postinstall deep-eql@0.1.3
+481 verbose unlock done using /Users/Anjelica/.npm/_locks/deep-eql-f689e15e63308ab1.lock for /Users/Anjelica/dev/new_node/node_modules/chai/node_modules/deep-eql
+482 verbose about to build /Users/Anjelica/dev/new_node/node_modules/chai
+483 info build /Users/Anjelica/dev/new_node/node_modules/chai
+484 info linkStuff chai@3.0.0
+485 silly linkStuff chai@3.0.0 has /Users/Anjelica/dev/new_node/node_modules as its parent node_modules
+486 verbose linkBins chai@3.0.0
+487 verbose linkMans chai@3.0.0
+488 verbose rebuildBundles chai@3.0.0
+489 verbose rebuildBundles [ 'assertion-error', 'deep-eql', 'type-detect' ]
+490 info install chai@3.0.0
+491 info postinstall chai@3.0.0
+492 verbose unlock done using /Users/Anjelica/.npm/_locks/chai-1866962058663ee9.lock for /Users/Anjelica/dev/new_node/node_modules/chai
+493 verbose stack Error: EACCES, unlink '/Users/Anjelica/dev/new_node/node_modules/.bin/mocha'
+493 verbose stack     at Error (native)
+494 verbose cwd /Users/Anjelica/dev/new_node/tests
+495 error Darwin 14.0.0
+496 error argv "node" "/usr/local/bin/npm" "install" "mocha" "chai" "request" "--save"
+497 error node v0.12.5
+498 error npm  v2.11.2
+499 error path /Users/Anjelica/dev/new_node/node_modules/.bin/mocha
+500 error code EACCES
+501 error errno -13
+502 error Error: EACCES, unlink '/Users/Anjelica/dev/new_node/node_modules/.bin/mocha'
+502 error     at Error (native)
+502 error  { [Error: EACCES, unlink '/Users/Anjelica/dev/new_node/node_modules/.bin/mocha']
+502 error   errno: -13,
+502 error   code: 'EACCES',
+502 error   path: '/Users/Anjelica/dev/new_node/node_modules/.bin/mocha' }
+503 error Please try running this command again as root/Administrator.
+504 verbose exit [ -13, true ]
+505 verbose unbuild node_modules/mocha
+506 info preuninstall mocha@2.2.5
+507 info uninstall mocha@2.2.5
+508 verbose unbuild rmStuff mocha@2.2.5 from /Users/Anjelica/dev/new_node/node_modules
+509 silly gentlyRm /Users/Anjelica/dev/new_node/node_modules/.bin/mocha is being gently removed
+510 silly gentlyRm verifying /Users/Anjelica/dev/new_node is an npm working directory
+511 silly gentlyRm /Users/Anjelica/dev/new_node/node_modules/.bin/_mocha is being gently removed
+512 silly gentlyRm verifying /Users/Anjelica/dev/new_node is an npm working directory
+513 silly gentlyRm containing path /Users/Anjelica/dev/new_node is under npm's control, in /Users/Anjelica/dev/new_node
+514 silly gentlyRm deletion target /Users/Anjelica/dev/new_node/node_modules/.bin/mocha is under /Users/Anjelica/dev/new_node
+515 verbose gentlyRm vacuuming from /Users/Anjelica/dev/new_node/node_modules/.bin/mocha up to /Users/Anjelica/dev/new_node
+516 silly gentlyRm containing path /Users/Anjelica/dev/new_node is under npm's control, in /Users/Anjelica/dev/new_node
+517 silly gentlyRm deletion target /Users/Anjelica/dev/new_node/node_modules/.bin/_mocha is under /Users/Anjelica/dev/new_node
+518 verbose gentlyRm vacuuming from /Users/Anjelica/dev/new_node/node_modules/.bin/_mocha up to /Users/Anjelica/dev/new_node
+519 silly vacuum-fs removing /Users/Anjelica/dev/new_node/node_modules/.bin/mocha
+520 silly vacuum-fs removing /Users/Anjelica/dev/new_node/node_modules/.bin/_mocha
+521 error error rolling back Error: EACCES, unlink '/Users/Anjelica/dev/new_node/node_modules/.bin/mocha'
+521 error error rolling back     at Error (native)
+521 error error rolling back  { [Error: EACCES, unlink '/Users/Anjelica/dev/new_node/node_modules/.bin/mocha']
+521 error error rolling back   errno: -13,
+521 error error rolling back   code: 'EACCES',
+521 error error rolling back   path: '/Users/Anjelica/dev/new_node/node_modules/.bin/mocha' }

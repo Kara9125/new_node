@@ -28,6 +28,10 @@ var users = [
 app.get("/users", function(req, res) {
 	res.json(users);
 
+app.get("/users:id", function(req, res) {
+	res.json(users.id);
+})
+
 app.post("/users", function(req, res){
 	var newUser = req.body;
 	users.push(newUser);
